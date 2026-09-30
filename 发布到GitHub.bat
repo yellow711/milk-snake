@@ -10,11 +10,16 @@ echo   ==========================================================
 echo     第一步：先在浏览器里建一个空仓库（只需一次）
 echo   ==========================================================
 echo.
-echo     1) 打开  https://github.com/new
-echo     2) Repository name 填：  %REPO%
-echo     3) 选  Public
-echo     4) 下面的 Add README / .gitignore / license 一个都别勾
-echo     5) 点  Create repository
+echo     ★ 如果你【还没】建过仓库：
+echo        1) 浏览器里会打开建仓库的页面
+echo        2) Repository name 填：  %REPO%
+echo        3) 选  Public
+echo        4) 下面的 Add README / .gitignore / license 一个都别勾
+echo        5) 点  Create repository
+echo.
+echo     ★ 如果你【已经】建好了（就是你现在的状态：
+echo        GitHub 上能看到这个项目，但页面是空的）：
+echo        浏览器弹出来的页面直接关掉，按任意键继续就行。
 echo.
 start "" "https://github.com/new?name=%REPO%&visibility=public"
 echo     建好后回到这里按任意键继续……
