@@ -1,0 +1,4 @@
+# 别让 git 把二进制文件当文本转换（换行符转换会直接弄坏 wasm/pck）
+*.wasm binary
+*.pck binary
+*.png binary
