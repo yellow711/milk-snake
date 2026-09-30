@@ -39,6 +39,16 @@ git push -u origin main
 
 if errorlevel 1 (
 	echo.
+	echo   第一次没传上去。最常见的原因：建仓库时勾了 Add a README file，
+	echo   远程仓库里已经有一条记录，和本地对不上。
+	echo.
+	echo   正在改用「覆盖上传」重试（你本地这份是完整的，不会丢东西）……
+	echo.
+	git push -u origin main --force
+)
+
+if errorlevel 1 (
+	echo.
 	echo   ----------------------------------------------------------
 	echo   推送失败。按顺序检查：
 	echo     1. 仓库名是不是 %REPO%（必须一模一样）
